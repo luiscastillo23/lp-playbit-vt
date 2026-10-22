@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background: radial-gradient(circle at 55% 45%, #CEC8C2 0%, #C4BDB7 75%, #B8B0A9 100%);
+    min-height: 100vh;
+  }
+}
+
+.font-display-stretched {
+  font-family: 'Orbitron', sans-serif;
+  transform: scaleX(1.08);
+  transform-origin: left center;
+}
+
+.font-display-stretched-right {
+  font-family: 'Orbitron', sans-serif;
+  transform: scaleX(1.08);
+  transform-origin: right center;
+}
