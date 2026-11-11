@@ -6,8 +6,8 @@ interface HeroContainerProps {
 
 export const HeroContainer: React.FC<HeroContainerProps> = ({ children }) => {
   return (
-    <main className="relative w-full min-h-screen overflow-hidden flex flex-col justify-between select-none">
+    <div className="relative w-full min-h-screen overflow-x-hidden flex flex-col justify-between">
       {children}
-    </main>
+    </div>
   );
 };
