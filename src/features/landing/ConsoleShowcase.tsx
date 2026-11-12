@@ -72,10 +72,10 @@ export const ConsoleShowcase: React.FC<ConsoleShowcaseProps> = ({
   const isOrangeLE = editionId === 'atomic-orange';
 
   return (
-    <div className="relative z-20 flex flex-col items-center justify-center my-2 lg:my-0">
+    <div className="relative z-20 flex flex-col items-center justify-center my-2 lg:my-0 w-full max-w-full">
       {/* Interactive Hardware Unit */}
       <div
-        className="relative w-[300px] h-[460px] sm:w-[346px] sm:h-[526px] transition-transform duration-300 select-none"
+        className="relative w-[264px] h-[406px] sm:w-[320px] sm:h-[490px] xl:w-[346px] xl:h-[526px] transition-transform duration-300 select-none shrink-0"
         style={{
           transform: isFlatView ? 'rotate(0deg)' : 'rotate(-10deg)',
         }}

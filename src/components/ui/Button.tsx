@@ -12,7 +12,7 @@ export const Button: React.FC<ButtonProps> = ({
   ...props
 }) => {
   const baseClasses =
-    'font-display font-bold text-[11px] sm:text-xs tracking-[0.18em] uppercase px-8 sm:px-11 py-4 sm:py-5 rounded-full transition-all duration-200 active:scale-95 whitespace-nowrap';
+    'inline-flex items-center justify-center font-display font-bold text-[11px] sm:text-xs tracking-[0.16em] sm:tracking-[0.18em] uppercase px-6 sm:px-9 xl:px-11 py-3.5 sm:py-4 xl:py-5 rounded-full transition-all duration-200 active:scale-95 whitespace-nowrap min-h-[44px]';
 
   const variants = {
     primary:

@@ -14,7 +14,13 @@ export const PillNav: React.FC = () => {
         return (
           <button
             key={item.id}
-            onClick={() => setActiveTab(item.id)}
+            onClick={() => {
+              setActiveTab(item.id);
+              const target = document.getElementById(item.id);
+              if (target) {
+                target.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}
             className={`text-xs sm:text-sm font-sans transition-all duration-200 rounded-full ${
               isActive
                 ? 'bg-[#E3DFDC] text-[#181615] px-5 py-2 font-medium shadow-sm'
