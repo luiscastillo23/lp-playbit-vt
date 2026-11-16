@@ -1,7 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { HeroContainer } from './components/layout/HeroContainer';
-import { Header } from './components/layout/Header';
-import { BackgroundWatermark } from './features/landing/BackgroundWatermark';
 import { HeroSection } from './features/landing/HeroSection';
 import { ConsoleFeatureSection } from './features/landing/ConsoleFeatureSection';
 import { GamesLibrarySection } from './features/landing/GamesLibrarySection';
@@ -48,12 +45,8 @@ export const App: React.FC = () => {
   }, []);
 
   return (
-    <div id="top" className="w-full min-h-screen flex flex-col">
-      <HeroContainer>
-        <BackgroundWatermark />
-        <Header />
-        <HeroSection />
-      </HeroContainer>
+    <div id="top" className="w-full min-h-screen flex flex-col overflow-x-clip">
+      <HeroSection />
 
       <ConsoleFeatureSection
         selectedFinishId={selectedFinishId}
